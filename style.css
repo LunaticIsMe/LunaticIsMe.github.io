@@ -1,0 +1,332 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+.jumbotron {
+    background-image: url(background.png);
+    background-size: cover;
+    height: 750px;
+    margin-top:-75px;
+
+}
+.jumbotron img {
+    position: relative;
+    height: 150px;
+    margin-top: 10%;
+    margin-left : 45%;
+}
+
+.lead{
+position: relative;
+width: 850px;
+height: 72px;
+left: 150px;
+top: 30px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 100;
+font-size: 20px;
+line-height: 36px;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+
+.medsos{
+    list-style: none;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.medsos li{
+    margin: 0 10px;
+
+}
+
+.medsos a{
+    text-decoration: none;
+    color: #fff;
+}
+.medsos a i{
+    font: size 2.1rem;
+    transition: color .4s ease;
+}
+.medsos a:hover i{
+    color: aqua;
+}
+
+
+.card {
+    display: grid;
+    border-radius: 20px;
+
+}
+
+.card-image {
+    grid-area: image;
+    boxShadow: 750px;
+}
+.card-text {
+    grid-area: text;
+}
+
+.card-image {
+    grid-area: image;
+    background: url();
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+.col-md-12 p {
+    width: 1307px;
+    height: 180px;
+    left: calc(50% - 1307px/2 - 2.5px);
+    top: 1691px;
+    font-weight: 20;
+    
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: smaller; 
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    
+    
+    color: #000000;
+}
+/* .item{
+    transition: .5s ease-in-out;
+    border-radius: 20px;
+}
+.item:hover{
+    filter:brightness(40%);
+} */
+
+.image{
+    position: relative;
+    width: 400px;
+}
+.image__img{
+    display: block;
+    width: 100%;
+}
+.image__overlay{
+    position: absolute;
+    top: 0;
+    width: 93.2%;
+    height: 90%;
+    background: rgba(0, 0, 0, 0.6);
+    color:#FFFFFF;
+    font-family: 'Poppins';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.50s;
+
+}
+.image__overlay:hover{
+    opacity: 1;
+}
+.image__overlay:hover > *{
+    transform: translateY(0);
+}
+
+.image__title{
+    font-size: 4em;
+    font-weight: bold;
+}
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.btn {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn-primary {
+    border-color: #2196F3;
+    color: dodgerblue
+  }
+  
+  .btn-primary:hover {
+    background: #2196F3;
+    color: white;
+  }
+.p{
+
+position: absolute;
+width: 317px;
+height: 96px;
+left: 803px;
+top: 2522px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 300;
+font-size: 64px;
+line-height: 96px;
+}
+
+.footer{
+    background: #000;
+}
+
+footer{
+    background:#111;
+    height:auto;
+    width:100vw;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-content{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height:28px;
+    font-size: 14px;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font: size 2.1rem;
+    transition: color .4s ease;
+}
+.socials a:hover i{
+    color: aqua;
+}
+.footer-bottom{
+    width: 100vw;
+    padding: 20px;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px; 
+    word-spacing: 1px;
+    text-transform: capitalize;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* gallery1 */
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+
+.column {
+    flex: 25%;
+    max-width: 33.3%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    filter: grayscale(0.3) brightness(0.5);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+.column img:hover {
+    filter: grayscale(0);
+}
+
+
+
+
+
+
+
+
+/* responsiv desktop*/
+@media (min-width: 992px){
+
+    .nav-link :hover::after{
+        content:"";
+        display: block;
+        border-bottom: 3px solid green;    
+        width: 50%;
+    }
+
+
+    .navbar-brand, .nav-link {
+        color: white !important;
+    }
+
+
+/* Gallery */
+    @media screen and (max-width: 800px) {
+        .column {
+    flex: 50%;
+    max-width: 50%;
+        }
+    }
+    
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+    .column {
+    flex: 100%;
+    max-width: 100%;
+    }
+    .column img {
+    filter: grayscale(0) brightness(1);
+    }
+
+
+
+
+    }

@@ -1,0 +1,34 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsiv desktop*/
+@media (min-width: 992px){
+
+    .nav-link :hover::after{
+        content:"";
+        display: block;
+        border-bottom: 3px solid green;    
+        width: 50%;
+    }
+
+
+
+}
